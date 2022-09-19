@@ -20,6 +20,7 @@ while True:
     print(f'{"=" * 25}\n'
           f'{"Lojas Tabajara":^25}\n'
           f'{"=" * 25}')
+    print('ℹ️ Digite 0 para parar\n')
 
     produtos: list = []
     price: float = 1
@@ -53,3 +54,5 @@ while True:
         break
 
 print(f'\nObrigado pela preferência!')
+
+input()
