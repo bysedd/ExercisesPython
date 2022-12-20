@@ -42,7 +42,7 @@ while True:
 
     if voto == 0:
         break
-    elif 1 <= voto <= 23:
+    if 1 <= voto <= 23:
         for j in jogadores:
             if j['jogador'] == voto:
                 j['votos'] += 1
