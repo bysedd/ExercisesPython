@@ -17,27 +17,27 @@ a diretoria financeira e os representantes do sindicato laboral, chegou-se a seg
         O valor total a ser gasto com o pagamento do abono;
         O número de funcionário que receberá o valor mínimo de 100 reais;
         O maior valor pago como abono;
-    
+
 A tela abaixo é um exemplo de execução do programa, apenas para fins ilustrativos. Os valores podem mudar a cada
 execução do programa.
-    
+
     Projeção de Gastos com Abono
-    ============================ 
-    
+    ============================
+
     Salário: 1000
     Salário: 300
     Salário: 500
     Salário: 100
     Salário: 4500
     Salário: 0
-    
-    Salário    - Abono     
+
+    Salário    - Abono
     R$ 1000.00 - R$  200.00
     R$  300.00 - R$  100.00
     R$  500.00 - R$  100.00
     R$  100.00 - R$  100.00
     R$ 4500.00 - R$  900.00
-    
+
     Foram processados 5 colaboradores
     Total gasto com abonos: R$ 1400.00
     Valor mínimo pago a 3 colaboradores
