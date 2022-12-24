@@ -53,6 +53,6 @@ while True:
     else:
         break
 
-print(f'\nObrigado pela preferência!')
+print('\nObrigado pela preferência!')
 
 input()
