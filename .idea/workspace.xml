@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0af3b02a-0a62-4b46-a9fd-8a35466025fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/vetores.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ExercisesPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ExercisesPython.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/vetores/facil_1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/vetores/facil_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/vetores/facil_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/vetores.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/vetores.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_science_master/site.txt" beforeDir="false" afterPath="$PROJECT_DIR$/computer_science_master/site.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_brasil/site.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_brasil/site.txt" afterDir="false" />
     </list>
@@ -31,6 +28,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Programs/Python/Python311/Lib/site-packages/num2words/lang_PT.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -206,6 +206,7 @@
       <workItem from="1673106764746" duration="901000" />
       <workItem from="1673475115789" duration="955000" />
       <workItem from="1673476506295" duration="886000" />
+      <workItem from="1675019154196" duration="390000" />
     </task>
     <servers />
   </component>
