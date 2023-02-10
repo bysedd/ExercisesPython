@@ -31,32 +31,31 @@ Observe que os votos inválidos e o zero final não devem ser computados como vo
     O melhor jogador foi o número 9, com 4 votos, correspondendo a 50% do total de votos.
 """
 
-jogadores = [
-    {'jogador': i, 'votos': 0} for i in range(1, 24)
-]
+jogadores = [{"jogador": i, "votos": 0} for i in range(1, 24)]
 
-print('Enquete: Quem foi o melhor jogador?', end='\n\n')
+print("Enquete: Quem foi o melhor jogador?", end="\n\n")
 
 while True:
-    voto = int(input('Número do jogador (0=fim): '))
+    voto = int(input("Número do jogador (0=fim): "))
 
     if voto == 0:
         break
     if 1 <= voto <= 23:
         for j in jogadores:
-            if j['jogador'] == voto:
-                j['votos'] += 1
+            if j["jogador"] == voto:
+                j["votos"] += 1
     else:
-        print('Informe um valor entre 1 e 23 ou 0 para sair!')
+        print("Informe um valor entre 1 e 23 ou 0 para sair!")
 
-total = sum([j['votos'] for j in jogadores])
+total = sum([j["votos"] for j in jogadores])
 
-print('\nResultado da votação:', end='\n\n')
+print("\nResultado da votação:", end="\n\n")
 
-print(f'Foram computados {total} votos.')
+print(f"Foram computados {total} votos.")
 
 print(f'{"Jogador":<16}{"Votos":<16}%')
 for j in jogadores:
-    if j['votos'] > 0:
+    if j["votos"] > 0:
         print(
-            f'{j["jogador"]:<16}{j["votos"]:<16}{str(round(j["votos"] / total * 100, 1)).replace(".", ",")}%')
+            f'{j["jogador"]:<16}{j["votos"]:<16}{str(round(j["votos"] / total * 100, 1)).replace(".", ",")}%'
+        )

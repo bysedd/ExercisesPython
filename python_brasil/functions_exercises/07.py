@@ -17,30 +17,30 @@ def valor_pagamento(valor, dias):
 
 
 def relatorio():
-    print('-' * 50)
-    print(f'Quantidade de prestações pagas: {cont}')
-    print(f'Valor total das prestações pagas: R$ {total:.2f}')
-    print('-' * 50)
+    print("-" * 50)
+    print(f"Quantidade de prestações pagas: {cont}")
+    print(f"Valor total das prestações pagas: R$ {total:.2f}")
+    print("-" * 50)
 
 
 cont = 0
 total = 0
 while True:
     try:
-        valor = float(input('Informe o valor da prestação (0 para sair): '))
+        valor = float(input("Informe o valor da prestação (0 para sair): "))
         if valor == 0:
             if not total:
-                print('Nenhuma prestação foi paga.')
+                print("Nenhuma prestação foi paga.")
                 continue
             relatorio()
             break
         if valor > 0:
-            dias = int(input('Informe o número de dias em atraso: '))
+            dias = int(input("Informe o número de dias em atraso: "))
             total += valor_pagamento(valor, dias)
             cont += 1
         else:
             raise ValueError
     except (ValueError, ZeroDivisionError):
-        print('\033[31mValor inválido, tente novamente.\033[m')
+        print("\033[31mValor inválido, tente novamente.\033[m")
     finally:
         print()
