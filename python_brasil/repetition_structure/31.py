@@ -17,42 +17,40 @@ Troco: R$ 12.00
 """
 
 while True:
-    print(f'{"=" * 25}\n'
-          f'{"Lojas Tabajara":^25}\n'
-          f'{"=" * 25}')
-    print('ℹ️ Digite 0 para parar\n')
+    print(f'{"=" * 25}\n' f'{"Lojas Tabajara":^25}\n' f'{"=" * 25}')
+    print("ℹ️ Digite 0 para parar\n")
 
     produtos: list = []
     price: float = 1
     cont: int = 1
 
     while price != 0:
-        price = float(input(f'Produto {cont}: R$ '))
+        price = float(input(f"Produto {cont}: R$ "))
         produtos.append(price)
         cont += 1
 
     total = sum(produtos)
-    print(f'\nTotal: R$ {total:.2f}')
+    print(f"\nTotal: R$ {total:.2f}")
 
-    dinheiro: float = float(input('Dinheiro: R$ '))
+    dinheiro: float = float(input("Dinheiro: R$ "))
 
     troco = dinheiro - total
     while troco < 0:
-        print(f'\nEstá faltando R$ {abs(troco):.2f}')
-        dinheiro: float = float(input('Adicionar dinheiro: R$ '))
+        print(f"\nEstá faltando R$ {abs(troco):.2f}")
+        dinheiro: float = float(input("Adicionar dinheiro: R$ "))
         troco += dinheiro
 
-    print(f'\nTroco: R$ {troco:.2f}')
+    print(f"\nTroco: R$ {troco:.2f}")
 
-    resp = input('\nDeseja fazer uma nova compra (s/n)? ')[0].lower()
-    while 's' != resp != 'n':
-        resp = input('Deseja fazer uma nova compra (s/n)? ')[0].lower()
+    resp = input("\nDeseja fazer uma nova compra (s/n)? ")[0].lower()
+    while "s" != resp != "n":
+        resp = input("Deseja fazer uma nova compra (s/n)? ")[0].lower()
 
-    if resp == 's':
+    if resp == "s":
         print()
     else:
         break
 
-print('\nObrigado pela preferência!')
+print("\nObrigado pela preferência!")
 
 input()

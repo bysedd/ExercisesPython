@@ -50,7 +50,8 @@ for i, vehicle in enumerate(vehicles):
     total_price = liters_total * 2.25
     print(
         f"{i + 1} - {vehicle['nome']:<15} - {vehicle['kml']:>6} - "
-        f"{round(liters_total, 1):>6} liters - ${total_price:.2f}")
+        f"{round(liters_total, 1):>6} liters - ${total_price:.2f}"
+    )
 
 reduced_consumption = max(vehicles, key=lambda v: v["kml"])
 print(f"The lowest consumption is the {reduced_consumption['nome']}.")

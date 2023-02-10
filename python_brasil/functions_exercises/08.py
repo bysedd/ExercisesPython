@@ -2,15 +2,15 @@
 
 
 def count_digits(number: int) -> int:
-    return len(str(number).replace('-', '').replace('+', ''))
+    return len(str(number).replace("-", "").replace("+", ""))
 
 
 while True:
     try:
-        number = int(input('Informe um número (0 para sair): '))
+        number = int(input("Informe um número (0 para sair): "))
         if number == 0:
             break
     except ValueError:
-        print('\033[31mValor inválido, tente novamente.\033[m')
+        print("\033[31mValor inválido, tente novamente.\033[m")
     else:
-        print(f'O número {number} tem {count_digits(number)} digitos.')
+        print(f"O número {number} tem {count_digits(number)} digitos.")

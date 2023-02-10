@@ -46,28 +46,31 @@ execução do programa.
 
 colaboradores = []
 
-print('Projeção de Gastos com Abono')
-print('============================', end='\n\n')
+print("Projeção de Gastos com Abono")
+print("============================", end="\n\n")
 
 while True:
-    salario = float(input('Salário (0=fim): '))
+    salario = float(input("Salário (0=fim): "))
     if salario > 0:
         colaboradores.append(
-            {'salario': salario, 'abono': salario * 0.2 if salario * 0.2 > 100 else 100})
+            {"salario": salario, "abono": salario *
+                0.2 if salario * 0.2 > 100 else 100}
+        )
     elif salario == 0:
         break
 
-print('\nSalário    - Abono')
+print("\nSalário    - Abono")
 for c in colaboradores:
     print(f'R${c["salario"]:>8.2f} - R${c["abono"]:>8.2f}')
 
 qtd_colab = len(colaboradores)
 total_abonos = sum([colab["abono"] for colab in colaboradores])
-qtd_minimo_pago = len([colab["abono"]
-                       for colab in colaboradores if colab["abono"] == 100])
+qtd_minimo_pago = len(
+    [colab["abono"] for colab in colaboradores if colab["abono"] == 100]
+)
 maior_colab = max(colaboradores, key=lambda colab: colab["abono"])
 
-print(f'\nForam processados {len(colaboradores)} colaboradores')
-print(f'Total gasto com abonos: R$ {total_abonos:.2f}')
-print(f'Valor mínimo pago a {qtd_minimo_pago} colaboradores')
+print(f"\nForam processados {len(colaboradores)} colaboradores")
+print(f"Total gasto com abonos: R$ {total_abonos:.2f}")
+print(f"Valor mínimo pago a {qtd_minimo_pago} colaboradores")
 print(f'Maior valor de abono pago: R$ {maior_colab["abono"]:.2f}')

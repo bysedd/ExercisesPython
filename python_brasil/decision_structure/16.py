@@ -11,28 +11,28 @@ O programa deverá pedir os valores de a, b e c e fazer as consistências, infor
 from math import sqrt
 
 try:
-    a = int(input('a = '))
+    a = int(input("a = "))
 
     if a == 0:
         raise ValueError
 
-    b = int(input('b = '))
-    c = int(input('c = '))
+    b = int(input("b = "))
+    c = int(input("c = "))
 
     delta = pow(b, 2) - 4 * a * c
 
-    print(f'\n∆ = {delta}\n')
+    print(f"\n∆ = {delta}\n")
 
     if delta < 0:
-        print('S = { } (não existe solução real)')
+        print("S = { } (não existe solução real)")
     else:
         x = ((b * -1) + sqrt(delta)) / (2 * a)
         y = ((b * -1) - sqrt(delta)) / (2 * a)
 
         if delta == 0:
-            print(f'S = { {round(x, 3)} }')
+            print(f"S = { {round(x, 3)} }")
         else:
-            print(f'S = { {round(x, 3), round(y, 3)} }')
+            print(f"S = { {round(x, 3), round(y, 3)} }")
 
 except ValueError:
-    print('A equação não é de segundo grau!')
+    print("A equação não é de segundo grau!")
