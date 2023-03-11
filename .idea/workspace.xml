@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0af3b02a-0a62-4b46-a9fd-8a35466025fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/if_else.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/recriando_musica_patinhos.py" afterDir="false" />
+    <list default="true" id="0af3b02a-0a62-4b46-a9fd-8a35466025fa" name="Changes" comment="Mais exercícios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/vetores.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/vetores.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/if_else.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/computer_science_master/logica_de_programacao/if_else.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -207,8 +206,18 @@
       <workItem from="1675200456223" duration="1031000" />
       <workItem from="1678293696635" duration="2442000" />
       <workItem from="1678307342738" duration="4573000" />
-      <workItem from="1678372829534" duration="1830000" />
+      <workItem from="1678372829534" duration="3039000" />
+      <workItem from="1678394672279" duration="5942000" />
+      <workItem from="1678542650608" duration="673000" />
     </task>
+    <task id="LOCAL-00001" summary="Mais exercícios">
+      <created>1678374967445</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678374967445</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +236,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Mais exercícios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mais exercícios" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ExercisesPython$01.coverage" NAME="01 Coverage Results" MODIFIED="1668085991711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functions_exercises" />
