@@ -44,7 +44,7 @@ def main(_patinhos: int = 5):
     if _patinhos < 1:
         raise ValueError('O número de patinhos deve ser maior que 0.')
     # Dicionário com os plurais dos patinhos
-    patinhos: dict[int, str] = {
+    patinhos: dict[int | tuple, str] = {
         1: 'patinho',
         tuple(range(2, _patinhos + 1)): 'patinhos',
     }
