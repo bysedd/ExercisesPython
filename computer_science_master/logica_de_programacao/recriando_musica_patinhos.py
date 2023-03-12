@@ -76,10 +76,9 @@ def main(_patinhos: int = 5):
                 print(texto)
                 print(f'Mas nenhum {patinhos[1]} voltou de lá.\n')
             sleep(1)
-        else:
-            # Segunda parte
-            print(final)
-            print(f'E os {_patinhos} {patinhos[1]}s voltaram de lá.')
+        # Segunda parte
+        print(final)
+        print(f'E os {_patinhos} {patinhos[1]}s voltaram de lá.')
 
 
 if __name__ == '__main__':
