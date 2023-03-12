@@ -42,46 +42,46 @@ from time import sleep
 
 def main(_patinhos: int = 5):
     if _patinhos < 1:
-        raise ValueError('O número de patinhos deve ser maior que 0.')
+        raise ValueError("O número de patinhos deve ser maior que 0.")
     # Dicionário com os plurais dos patinhos
     patinhos: dict[int, str] = {
-        1: 'patinho',
-        tuple(range(2, _patinhos + 1)): 'patinhos',
+        1: "patinho",
+        tuple(range(2, _patinhos + 1)): "patinhos",
     }
     # Texto da música
-    texto: str = 'Além das montanhas para brincar\n' \
-                 'A mamãe gritou: "Quá, quá, quá, quá"'
+    texto: str = ("Além das montanhas para brincar\n"
+                  'A mamãe gritou: "Quá, quá, quá, quá"')
     # Texto final
-    final: str = 'A mamãe patinha foi procurar\n' \
-                 'Além das montanhas, na beira do mar\n' \
-                 'A mamãe gritou: "Quá, quá, quá, quá!"'
+    final: str = ("A mamãe patinha foi procurar\n"
+                  "Além das montanhas, na beira do mar\n"
+                  'A mamãe gritou: "Quá, quá, quá, quá!"')
     if _patinhos == 1:
         # Primeira parte
-        print(f'{_patinhos} {patinhos[1]} foi passear')
+        print(f"{_patinhos} {patinhos[1]} foi passear")
         print(texto)
-        print(f'Mas nenhum {patinhos[1]} voltou de lá.\n')
+        print(f"Mas nenhum {patinhos[1]} voltou de lá.\n")
         sleep(1)
         # Segunda parte
         print(final)
-        print(f'E um {patinhos[1]} voltou de lá.')
+        print(f"E um {patinhos[1]} voltou de lá.")
     else:
         # Primeira parte
         for i in range(_patinhos, 0, -1):
             if i != 1:
-                print(f'{i} {patinhos[1]}s foram passear')
+                print(f"{i} {patinhos[1]}s foram passear")
                 print(texto)
-                print(f'Mas só {i - 1} {patinhos[1]} voltaram de lá.\n')
+                print(f"Mas só {i - 1} {patinhos[1]} voltaram de lá.\n")
             else:
-                print(f'{i} {patinhos[1]} foi passear')
+                print(f"{i} {patinhos[1]} foi passear")
                 print(texto)
-                print(f'Mas nenhum {patinhos[1]} voltou de lá.\n')
+                print(f"Mas nenhum {patinhos[1]} voltou de lá.\n")
             sleep(1)
         # Segunda parte
         print(final)
-        print(f'E os {_patinhos} {patinhos[1]}s voltaram de lá.')
+        print(f"E os {_patinhos} {patinhos[1]}s voltaram de lá.")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
         main(_patinhos=10)
     except (ValueError, KeyboardInterrupt) as e:
