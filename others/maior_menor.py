@@ -1,4 +1,5 @@
 from functools import reduce
+import sys
 
 
 def casas_decimais(lista: list):
@@ -13,7 +14,7 @@ try:
     n = input('Quantos valores irá digitar? ')
     if n == '0':
         print('OK, não irei digitar nenhum valor.')
-        exit(1)
+        sys.exit(1)
     while not n.isnumeric():
         print('\033[31mDigite um número válido!\033[m')
         n = input('\nQuantos valores irá digitar? ')
