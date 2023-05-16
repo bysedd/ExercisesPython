@@ -8,7 +8,7 @@ def roll_dice() -> int:
     return randint(1, 6) + randint(1, 6)
 
 
-def play_craps(simulate: int=0) -> dict[str: int]:
+def play_craps(simulate: int = 0) -> dict[str: int]:
     match = {'games': 0, 'win': 0, 'loss': 0}
     display = simulate == 0
 
@@ -49,6 +49,7 @@ def play_craps(simulate: int=0) -> dict[str: int]:
                 else:
                     match['win'] += 1
             match['games'] += 1
+
     if not simulate:
         while True:
             jogar()
@@ -59,7 +60,7 @@ def play_craps(simulate: int=0) -> dict[str: int]:
                 break
     else:
         for _ in range(simulate):
-            jogar()                
+            jogar()
     return match
 
 
